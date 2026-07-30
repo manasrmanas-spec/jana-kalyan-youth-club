@@ -841,38 +841,36 @@ body.dark .leaders {
 
 @media(max-width:768px){
 
-.contact{
-    padding:60px 20px;
-}
-
-.contact h2{
-    font-size:30px;
-}
-
-.contact-box{
-    grid-template-columns:1fr;
-}
-
 .contact-info{
-    padding:25px;
+    width:100%;
+    padding:20px;
+    box-sizing:border-box;
 }
 
 .contact-info h3{
-    font-size:28px;
+    font-size:32px;
+    line-height:1.2;
+    word-break:break-word;
+}
+
+.contact-item{
+    width:100%;
+    box-sizing:border-box;
+    padding:15px;
 }
 
 .contact-item h4{
-    font-size:18px;
+    font-size:20px;
 }
 
 .contact-item p{
-    font-size:15px;
+    font-size:16px;
+    word-break:break-word;
 }
 
 .contact-map iframe{
+    width:100%;
     height:300px;
-}
-
 }
 .footer{
     background:#111827;
