@@ -982,3 +982,114 @@ img{
         grid-template-columns:1fr;
     }
 }
+/* ================= NOTICE BOARD ================= */
+
+.notice-board{
+    padding:70px 20px;
+    background:#f5f7fa;
+}
+
+.notice-board h2{
+    text-align:center;
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:35px;
+}
+
+.notice-list{
+    max-width:900px;
+    margin:auto;
+}
+
+.notice-item{
+    background:#fff;
+    border-left:8px solid #16a34a;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    position:relative;
+    transition:.3s;
+}
+
+.notice-item:hover{
+    transform:translateY(-8px);
+}
+
+.notice-item .date{
+    display:inline-block;
+    background:#16a34a;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* NEW Badge */
+.notice-item::before{
+    content:"NEW";
+    position:absolute;
+    top:-12px;
+    right:20px;
+    background:red;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    animation:blink 1s infinite;
+}
+
+/* Blink Effect */
+@keyframes blink{
+
+    0%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:.3;
+        transform:scale(1.2);
+    }
+
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+.notice-item h3{
+    color:#0d6efd;
+    margin-bottom:18px;
+    font-size:28px;
+}
+
+.notice-item p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.notice-board h2{
+    font-size:30px;
+}
+
+.notice-item{
+    padding:20px;
+}
+
+.notice-item h3{
+    font-size:22px;
+}
+
+.notice-item p{
+    font-size:16px;
+}
+
+}
