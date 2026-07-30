@@ -1186,3 +1186,18 @@ header{
         display:none;
     }
 }
+@media (max-width:768px){
+
+    .top-motivation{
+        position:relative;
+        width:100%;
+        height:40px;
+        overflow:hidden;
+        padding:0;
+    }
+
+    .top-motivation marquee{
+        line-height:40px;
+        white-space:nowrap;
+    }
+}
