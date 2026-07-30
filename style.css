@@ -866,6 +866,7 @@ body.dark .leaders {
 .contact-item p{
     font-size:16px;
     word-break:break-word;
+    overflow-warp: break-word;
 }
 
 .contact-map iframe{
