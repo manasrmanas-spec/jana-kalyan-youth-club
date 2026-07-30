@@ -345,26 +345,17 @@ body.dark .leaders {
         display: block;
     }
 
-    .navbar ul {
-
-        display: none;
-
-        position: absolute;
-
-        top: 60px;
-        left: 0;
-
-        width: 100%;
-
-        background: black;
-
-        flex-direction: column;
-
-        text-align: center;
-
-        padding: 20px;
-
-    }
+    .navbar ul{
+    display:flex;
+    position:static;
+    width:auto;
+    background:none;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    padding:0;
+}
 
 
     .navbar ul.show {
