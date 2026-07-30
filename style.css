@@ -1112,32 +1112,43 @@ header{
 
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .navbar{
-    flex-direction:column;
-    gap:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
 }
 
 .navbar ul{
+    display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
+    gap:12px;
 }
 
-.hero-logo{
-    width:120px;
-    height:120px;
+.nav-logo{
+    font-size:20px;
+}
+
+.hero{
+    padding:60px 15px;
 }
 
 .hero h1{
-    font-size:36px;
+    font-size:34px;
 }
 
 .hero p{
     font-size:18px;
 }
 
+.main-btn{
+    padding:12px 28px;
 }
+}
+
 
 
