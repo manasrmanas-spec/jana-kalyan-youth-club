@@ -13,45 +13,6 @@ body {
 }
 
 
-/* NAVBAR */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px 5%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    color: #3bb143;
-}
 
 .menu-btn,
 .dark-btn {
@@ -64,44 +25,6 @@ header {
 
 .menu-btn {
     display: none;
-}
-
-
-/* HERO */
-
-.hero {
-    margin-top: 60px;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: white;
-
-    background:
-        linear-gradient(
-            135deg,
-            #3bb143,
-            #3bb143,
-            #00e676
-        );
-
-    overflow: hidden;
-}
-
-.hero-content {
-    animation: fadeIn 2s ease;
-}
-
-.hero h1 {
-    font-size: 55px;
-}
-
-.hero p {
-    font-size: 22px;
-    margin: 20px;
 }
 
 .main-btn,
@@ -447,14 +370,6 @@ body.dark .leaders {
         display: flex;
     }
 
-    .hero h1 {
-        font-size: 35px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
     .section {
         padding: 70px 5%;
     }
@@ -589,45 +504,7 @@ body.dark .leaders {
     color:#0066cc;
     margin:30px 0;
 }
-/* Hero Title */
-.hero-title{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    text-align:center;
-}
 
-/* Hero Logo */
-.logo{
-    width:120px;
-    height:120px;
-    object-fit:contain;
-    border-radius:50%;
-}
-
-/* Mobile Responsive */
-@media (max-width:768px){
-
-    .hero-title{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .logo{
-        width:110px;
-        height:110px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-}
 .stats{
     display:flex;
     justify-content:center;
@@ -911,42 +788,6 @@ body.dark .leaders {
     font-size:15px;
 }
 
-
-/* ଏହା ପରେ paste କର */
-
-@media (max-width:768px){
-
-.hero{
-    min-height:75vh;
-    padding:40px 20px;
-}
-
-.hero-title{
-    flex-direction:column;
-    text-align:center;
-    gap:15px;
-}
-
-.logo{
-    width:120px;
-    height:120px;
-    object-fit:contain;
-    border-radius:50%;
-}
-
-.hero h1{
-    font-size:38px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.main-btn{
-    padding:12px 28px;
-}
-
-}
 .top-motivation{
     position: fixed;
     top: 60px;
@@ -981,40 +822,6 @@ img{
     max-width:100%;
     height:auto;
 }
-
-@media (max-width:768px){
-
-    .navbar{
-        padding:15px;
-    }
-
-    .hero{
-        width:100%;
-        min-height:75vh;
-        padding:40px 15px;
-    }
-
-    .hero-title{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        gap:15px;
-        width:100%;
-    }
-
-    .hero-logo{
-        width:100px;
-        height:100px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
 
     .stats{
         display:flex;
@@ -1177,3 +984,190 @@ img{
     font-size:17px;
     line-height:1.8;
 }
+
+.main-btn{
+    display:inline-block;
+    padding:14px 34px;
+    background:#fff;
+    color:#16a34a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.main-btn:hover{
+    transform:translateY(-4px);
+    background:#f3f4f6;
+}
+
+}
+/* ================= NAVBAR ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+.navbar{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+}
+
+.nav-logo{
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#22c55e;
+}
+
+.dark-btn{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* ================= TOP NOTICE ================= */
+
+.top-motivation{
+    margin-top:60px;
+    background:#16a34a;
+    color:#fff;
+    padding:10px 0;
+    font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero-logo{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    border-radius:50%;
+    background:#fff;
+    padding:10px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.main-btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#fff;
+    color:#16a34a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.main-btn:hover{
+    background:#f3f4f6;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero-logo{
+    width:120px;
+    height:120px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+/* ===== Hero Background Slider ===== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-slider{
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+.hero-slider .slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.5s ease;
+    filter:brightness(45%);
+}
+
+.hero-slider .slide.active{
+    opacity:0.25;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+
