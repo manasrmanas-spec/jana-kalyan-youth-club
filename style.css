@@ -70,6 +70,7 @@ header {
 /* HERO */
 
 .hero {
+    margin: top 60px;
     height: 100vh;
 
     display: flex;
@@ -889,4 +890,22 @@ body.dark .leaders {
     padding:12px 28px;
 }
 
+}
+.top-motivation{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #16a34a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.top-motivation marquee{
+    white-space: nowrap;
 }
