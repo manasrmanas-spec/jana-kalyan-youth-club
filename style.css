@@ -1105,41 +1105,51 @@ header{
 
 @media (max-width:768px){
 
-.navbar{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 20px;
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 15px;
+        gap:15px;
+    }
+
+    .nav-logo{
+        color:#fff;
+        font-size:15px;
+        font-weight:bold;
+        line-height:1.2;
+        max-width:130px;
+    }
+
+    .navbar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        align-items:center;
+        gap:8px;
+        list-style:none;
+    }
+
+    .navbar ul li a{
+        font-size:12px;
+        color:#fff;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    .dark-btn{
+        font-size:20px;
+    }
+
+    .hero{
+        padding:70px 15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
 }
-
-.navbar ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
-}
-
-.nav-logo{
-    font-size:20px;
-}
-
-.hero{
-    padding:60px 15px;
-}
-
-.hero h1{
-    font-size:34px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.main-btn{
-    padding:12px 28px;
-}
-}
-
-
-
