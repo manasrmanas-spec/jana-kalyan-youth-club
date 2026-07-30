@@ -855,3 +855,38 @@ body.dark .leaders {
     color:#aaa;
     font-size:15px;
 }
+
+
+/* ଏହା ପରେ paste କର */
+
+@media (max-width:768px){
+
+.hero{
+    min-height:75vh;
+    padding:40px 20px;
+}
+
+.hero-title{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.hero-logo{
+    width:110px;
+    height:110px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.main-btn{
+    padding:12px 28px;
+}
+
+}
