@@ -1153,3 +1153,36 @@ header{
         font-size:18px;
     }
 }
+
+/* Mobile Scroll Menu */
+.mobile-nav{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .mobile-nav{
+        display:flex;
+        overflow-x:auto;
+        white-space:nowrap;
+        gap:20px;
+        padding:10px 15px;
+        background:#111827;
+        scrollbar-width:none;
+    }
+
+    .mobile-nav::-webkit-scrollbar{
+        display:none;
+    }
+
+    .mobile-nav a{
+        color:#fff;
+        text-decoration:none;
+        font-weight:bold;
+        flex:none;
+    }
+
+    .navbar ul{
+        display:none;
+    }
+}
